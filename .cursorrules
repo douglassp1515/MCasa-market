@@ -1,0 +1,37 @@
+# MCasa market — Cursor Rules
+
+Você está trabalhando no repositório **MCasa-market**.
+
+## Projeto
+
+Vitrine pública (storefront) Next.js do MCasa. A API Node.js, o MySQL e o Docker Compose ficam no repositório irmão `MCasa-backend`. O ERP fica em `MCasa-frontEnd`.
+
+## Stack
+
+| Camada | Tecnologia | Versão |
+|---|---|---|
+| Frontend | Next.js App Router + Tailwind 4 + HeroUI | Next 16.3.8, React 19.3.0 |
+| Backend | Node.js + Express + GraphQL + Prisma | outro repositório |
+| Banco | MySQL 8.4 | outro repositório |
+| Local | Docker Compose | `../MCasa-backend/docker-compose.yml` |
+
+## Convenções
+
+- Código (variáveis, componentes): Inglês
+- Textos de tela e docs: Português (PT-BR)
+- Condicionais: if/else — evitar ternário
+- NUNCA commitar ou fazer push automaticamente
+- NUNCA alterar git config
+- NUNCA commitar `.env`
+
+## Documentação SDD (obrigatório)
+
+Antes de iniciar:
+- `docs/sdd/TASKS.md`
+- `docs/sdd/CONSTITUTION.md`
+- `docs/sdd/CLARIFY.md`
+
+Após concluir:
+- Atualizar `TASKS.md`
+- Decisão nova → `CONSTITUTION.md`
+- Risco novo → `CLARIFY.md`

@@ -1,0 +1,14 @@
+---
+description: Regras gerais do MCasa-market
+alwaysApply: true
+---
+
+# Regras gerais
+
+- Comunicar em português (PT-BR)
+- Antes de implementar, apresentar plano e aguardar aprovação
+- Sempre tratar erro
+- Ler `docs/sdd/TASKS.md` e `docs/sdd/CONSTITUTION.md` antes de codar
+- Nunca commitar ou fazer push automaticamente
+- Nunca commitar `.env`
+- Não contradizer `docs/sdd/CONSTITUTION.md`
