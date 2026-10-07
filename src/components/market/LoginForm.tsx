@@ -28,15 +28,15 @@ export function LoginForm() {
       setBuyerSession(result.token, result.buyer);
 
       const next = searchParams.get("next");
-      const resumeListingId = consumeCheckoutResume();
+      const resumePath = consumeCheckoutResume();
 
       if (next && next.startsWith("/")) {
         router.push(next);
         return;
       }
 
-      if (resumeListingId) {
-        router.push(`/checkout?listingId=${resumeListingId}`);
+      if (resumePath) {
+        router.push(resumePath);
         return;
       }
 

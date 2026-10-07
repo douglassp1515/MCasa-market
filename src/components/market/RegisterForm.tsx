@@ -27,10 +27,10 @@ export function RegisterForm() {
       const result = await registerMarketplaceBuyer({ name, email, password });
       setBuyerSession(result.token, result.buyer);
 
-      const resumeListingId = consumeCheckoutResume();
+      const resumePath = consumeCheckoutResume();
 
-      if (resumeListingId) {
-        router.push(`/checkout?listingId=${resumeListingId}`);
+      if (resumePath) {
+        router.push(resumePath);
         return;
       }
 
@@ -51,7 +51,8 @@ export function RegisterForm() {
       <div className="space-y-2">
         <h1 className="text-3xl font-semibold tracking-tight">Criar conta</h1>
         <p className="text-muted">
-          Cadastro de comprador para a vitrine MCasa.
+          Cadastro de comprador. Depois, no perfil, cadastre endereços (ViaCEP),
+          veja compras e cupons.
         </p>
       </div>
 

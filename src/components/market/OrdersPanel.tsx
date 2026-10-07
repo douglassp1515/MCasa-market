@@ -30,7 +30,11 @@ function formatDate(value: string) {
   }).format(date);
 }
 
-export function OrdersPanel() {
+type OrdersPanelProps = {
+  embedded?: boolean;
+};
+
+export function OrdersPanel({ embedded = false }: OrdersPanelProps) {
   const router = useRouter();
   const [orders, setOrders] = useState<MarketplaceOrder[]>([]);
   const [error, setError] = useState<string | null>(null);
@@ -38,7 +42,7 @@ export function OrdersPanel() {
 
   useEffect(() => {
     if (!hasBuyerSession()) {
-      router.replace("/login?next=/pedidos");
+      router.replace("/login?next=/perfil/compras");
       return;
     }
 
@@ -85,7 +89,11 @@ export function OrdersPanel() {
   return (
     <div className="space-y-6">
       <div className="space-y-2">
-        <h1 className="text-3xl font-semibold tracking-tight">Meus pedidos</h1>
+        {embedded ? (
+          <h2 className="text-xl font-semibold tracking-tight">Minhas compras</h2>
+        ) : (
+          <h1 className="text-3xl font-semibold tracking-tight">Minhas compras</h1>
+        )}
         <p className="text-muted">
           Cada compra mostra a empresa vendedora do anúncio.
         </p>
