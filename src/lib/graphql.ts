@@ -185,6 +185,11 @@ export type MarketplaceOrder = {
   createdAt: string;
   listingTitle: string | null;
   channel: string;
+  hasReturn: boolean;
+  returnStatus: string;
+  returnReason: string | null;
+  returnedAt: string | null;
+  returnPhotoUrls: string[];
 };
 
 export type MarketplacePayment = {

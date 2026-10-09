@@ -2,7 +2,18 @@
 
 > Fonte de verdade do que está pronto. Atualizar ao final de cada sessão.
 >
-> Última atualização: 2026-10-07 (Verificação de sessão JWT buyer)
+> Última atualização: 2026-10-07 (Pedido devolução comprador)
+
+---
+
+## Sessão 2026-10-07 — Pedido de devolução
+
+### Feito
+- [x] Minhas compras: pedir devolução com motivo + 1–5 fotos
+- [x] Proxy `/api/uploads/return-photos` + mutation `requestMarketplaceOrderReturn`
+
+### Pendente
+- [ ] F1 OAuth MELI/Shopee (aguardando sandbox)
 
 ---
 
