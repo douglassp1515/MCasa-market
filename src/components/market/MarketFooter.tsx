@@ -1,13 +1,16 @@
 import Link from "next/link";
 
+import { brand } from "@/config/brand";
+
 export function MarketFooter() {
   return (
-    <footer className="mt-auto border-t border-slate-800 bg-slate-950 text-slate-300">
+    <footer className="mt-auto border-t border-[#3d3460] bg-[#1e1833] text-slate-300">
       <div className="mx-auto grid max-w-6xl gap-8 px-4 py-12 sm:px-6 md:grid-cols-4">
         <div className="space-y-3 md:col-span-1">
-          <p className="text-lg font-semibold text-white">MCasa</p>
+          <p className="text-lg font-semibold text-white">{brand.storefront}</p>
           <p className="text-sm text-slate-400">
-            Marketplace de anúncios das empresas parceiras do ERP MCasa.
+            Anúncios das empresas parceiras do {brand.product} — by{" "}
+            {brand.company}.
           </p>
         </div>
         <div>
@@ -46,15 +49,33 @@ export function MarketFooter() {
           </ul>
         </div>
         <div>
-          <p className="mb-3 text-sm font-semibold text-white">Empresa</p>
+          <p className="mb-3 text-sm font-semibold text-white">Luar Studio</p>
           <ul className="space-y-2 text-sm">
-            <li className="text-slate-500">ERP em MCasa-frontEnd</li>
-            <li className="text-slate-500">API em MCasa-backend</li>
+            <li>
+              <a
+                href={brand.instagramUrl}
+                className="hover:text-white"
+                rel="noreferrer"
+                target="_blank"
+              >
+                @{brand.instagramHandle}
+              </a>
+            </li>
+            <li>
+              <a
+                href={brand.studioUrl}
+                className="hover:text-white"
+                rel="noreferrer"
+                target="_blank"
+              >
+                luarstudio.com.br
+              </a>
+            </li>
           </ul>
         </div>
       </div>
-      <div className="border-t border-slate-800 py-4 text-center text-xs text-slate-500">
-        © {new Date().getFullYear()} MCasa Marketplace
+      <div className="border-t border-[#3d3460] py-4 text-center text-xs text-slate-500">
+        © {new Date().getFullYear()} {brand.storefront} · {brand.company}
       </div>
     </footer>
   );

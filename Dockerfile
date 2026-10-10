@@ -8,6 +8,7 @@ COPY package.json package-lock.json ./
 RUN npm ci
 
 COPY src ./src
+COPY public ./public
 COPY next.config.ts tsconfig.json next-env.d.ts postcss.config.mjs ./
 
 ENV NEXT_TELEMETRY_DISABLED=1

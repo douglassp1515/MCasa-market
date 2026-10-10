@@ -119,7 +119,7 @@ export function HeroBanner() {
     return (
       <section className="bg-slate-950 px-4 py-16 text-white">
         <div className="mx-auto max-w-6xl space-y-4">
-          <h1 className="text-4xl font-bold tracking-tight">MCasa Marketplace</h1>
+          <h1 className="text-4xl font-bold tracking-tight">Vitrine Luar</h1>
           <p className="text-slate-400">
             {error || "Nenhum banner ativo. Rode o seed marketplace."}
           </p>

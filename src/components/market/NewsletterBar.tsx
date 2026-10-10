@@ -31,7 +31,7 @@ export function NewsletterBar() {
         <div>
           <h2 className="text-xl font-semibold">Receba novidades</h2>
           <p className="text-sm text-white/80">
-            Cadastre seu e-mail para lançamentos da vitrine MCasa.
+            Cadastre seu e-mail para lançamentos da Vitrine Luar.
           </p>
         </div>
         <form

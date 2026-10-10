@@ -68,10 +68,10 @@ export function ListingsGrid() {
     <section className="space-y-8">
       <div className="max-w-2xl space-y-3">
         <h1 className="text-4xl font-semibold tracking-tight text-foreground sm:text-5xl">
-          MCasa
+          Vitrine Luar
         </h1>
         <p className="text-lg text-muted">
-          Anúncios ativos de todas as lojas parceiras — compre com login de
+          Anúncios ativos das lojas parceiras do Luar Hub — compre com login de
           comprador.
         </p>
       </div>

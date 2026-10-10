@@ -2,7 +2,7 @@ const ITEMS = [
   { title: "Entrega rápida", subtitle: "Parceiros em todo o Brasil" },
   { title: "Troca em 30 dias", subtitle: "Política clara por loja" },
   { title: "Pagamento seguro", subtitle: "Em breve PIX e cartão" },
-  { title: "Suporte", subtitle: "Atendimento às lojas MCasa" },
+  { title: "Suporte", subtitle: "Atendimento às lojas Luar Hub" },
 ];
 
 export function TrustBar() {

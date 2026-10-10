@@ -57,7 +57,7 @@ export function LoginForm() {
       <div className="space-y-2">
         <h1 className="text-3xl font-semibold tracking-tight">Entrar</h1>
         <p className="text-muted">
-          Use sua conta de comprador do marketplace MCasa.
+          Use sua conta de comprador da Vitrine Luar.
         </p>
       </div>
 

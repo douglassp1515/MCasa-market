@@ -4,8 +4,10 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 
+import { LuarMark } from "@/components/brand/LuarMark";
 import { useCategoryTheme } from "@/components/market/CategoryTheme";
 import { useCart } from "@/components/market/CartProvider";
+import { brand } from "@/config/brand";
 import {
   clearBuyerSession,
   getBuyerToken,
@@ -315,17 +317,19 @@ export function MarketShell({ children }: MarketShellProps) {
   }
 
   return (
-    <div className="flex min-h-screen flex-col bg-slate-50 text-slate-900">
-      <header className="sticky top-0 z-40 border-b border-slate-800 bg-slate-950 text-white">
+    <div className="flex min-h-screen flex-col bg-[#f7f4fc] text-slate-900">
+      <header className="sticky top-0 z-40 border-b border-[#3d3460] bg-[#1e1833] text-white">
         <div className="mx-auto flex max-w-6xl items-center gap-4 px-4 py-3 sm:px-6">
           <Link href="/" className="flex shrink-0 items-center gap-2">
-            <span
-              className="flex h-8 w-8 items-center justify-center rounded-lg text-sm font-bold text-white"
-              style={{ backgroundColor: accentColor }}
-            >
-              M
+            <LuarMark size={34} inverted showWordmark={false} />
+            <span className="flex flex-col leading-tight">
+              <span className="text-lg font-semibold tracking-tight">
+                {brand.storefront}
+              </span>
+              <span className="text-[10px] uppercase tracking-[0.14em] text-white/60">
+                {brand.product}
+              </span>
             </span>
-            <span className="text-lg font-semibold tracking-tight">MCasa</span>
           </Link>
 
           <nav className="hidden items-end gap-6 text-sm text-slate-300 md:flex">
